@@ -9,12 +9,12 @@ import requests
 # TaxiFareModel front
 '''
 
-# st.markdown("""# This is a header
-# ## This is a sub header
-# This is text""")
+st.markdown("""
+            Taxi Fare Website
+            """)
 
 # '''
-# ## Here we would like to add some controllers in order to ask the user to select the parameters of the ride
+# Here we would like to add some controllers in order to ask the user to select the parameters of the ride
 
 # 1. Let's ask for:
 # - date and time
@@ -24,6 +24,7 @@ import requests
 # - dropoff latitude
 # - passenger count
 # '''
+
 key='2021-04-15 12:10:20.0000001'
 pickup_date = st.date_input('Pickup date', value=datetime.datetime(2021, 10, 6, 12, 10, 20))
 pickup_time = st.time_input('Pickup time', value=datetime.datetime(2021, 10, 6, 12, 10, 20))
@@ -45,7 +46,7 @@ passenger_count = st.number_input('passenger count',min_value=1, max_value=8, st
 # 🤔 How could we call our API ? Off course... The `requests` package 💡
 # '''
 
-url = 'http://taxifare.lewagon.ai/predict_fare/'
+url = 'https://container-taxi-fare-two-id6kf6fenq-ew.a.run.app/predict_fare/'
 
 # if url == 'http://taxifare.lewagon.ai/predict_fare/':
 
